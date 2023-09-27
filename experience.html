@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Anand Theertha Nakhate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Apply opacity transition to the content area */
+        .content {
+            opacity: 0;
+            transition: opacity 0.2s ease; /* Adjust the transition time as needed */
+        }
+    </style>
+</head>
+<body id="education">
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Anand Theertha Nakhate</div>
+        <ul>
+            <li><a href="index.html#hero" id="nav-home" data-page="index.html">Home</a></li>
+            <li><a href="experience.html" id="nav-experience" data-page="experience.html">Experience</a></li>
+            <li><a href="education.html" id="nav-education" data-page="education.html">Education</a></li>
+            <li><a href="research.html" id="nav-research" data-page="research.html">Research</a></li>
+            <li><a href="contact.html" id="nav-contact" data-page="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Wrap your content inside a div with class "content" -->
+    <div class="content">
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="experience-header">
+                <h1>Experience</h1>
+            </div>
+            <div class="experience-item">
+                <div class="experience-logo">
+                    <img src="images/ms_logo.jpeg" alt="Morgan Stanley Logo">
+                </div>
+                <div class="experience-info">
+                    <p class="date">07/2022  -   07/2023</p>
+                    <h3>Morgan Stanley</h3>
+                    <p class="position">Associate, Strats and Quant</p>
+                    <p class="position">Fixed Income Division</p>
+                </div>
+                <div class="experience-details">
+                    <p>Actively developed an ETL process for the company's data quality system to empower strategy teams across multiple asset classes and market risk divisions, improving their ability to monitor, analyze, and visualize data errors and quality.</p>
+                    <p>Drove the development of a comprehensive multi-asset class backtesting library to price a portfolio of instruments such as Swaps, Swaptions, and Cap Floors by creating a time series of the portfolio and backtesting various trading strategies. This was employed by more than 50 strats, traders, and researchers. </p>
+                </div>
+            </div>
+            <!-- ... Add other experiences in a similar format ... -->
+            <div class="experience-item">
+                <div class="experience-logo">
+                    <img src="images/ms_logo.jpeg" alt="Morgan Stanley Logo">
+                </div>
+                <div class="experience-info">
+                    <p class="date">01/2022 - 07/2023</p>
+                    <h3>Morgan Stanley</h3>
+                    <p class="position">Intern, Strats and Quant</p>
+                    <p class="position">Fixed Income Division</p>
+                </div>
+                <div class="experience-details">
+                    <p>Designed and implemented a metadata cataloging system, streamlining data handling and improving data quality. The system facilitated the onboarding and management of 15,000+ datasets, enhancing data consistency and discoverability, with usage spanning over 1000 individuals and multiple systems.</p>
+                    <p>Optimized the company's data querying system by developing generators for translating complex Pandas-style queries to various datasets in different databases. This improvement enabled over 100 traders and strategists to seamlessly access and analyze various datasets.</p>
+                </div>
+            </div>
+            <!-- ... Add other experiences in a similar format ... -->
+            <div class="experience-item">
+                <div class="experience-logo">
+                    <img src="images/NTU_logo.png" alt="NTU Logo">
+                </div>
+                <div class="experience-info">
+                    <p class="date">08/2021 - 12/2021</p>
+                    <h3>Nanyang Technological University</h3>
+                    <p class="position">Research Intern</p>
+                    <p class="position">Speech and Language laboratory</p>
+                </div>
+                <div class="experience-details">
+                    <p>Contributed to developing an advanced Asynchronous Automatic Speech Recognition System that effectively manages downstream micro-services and facilitates real-time transcription. Successfully transcribed and logged one-on-one interview recordings, demonstrating strong attention to detail.</p>
+                    <p>Pioneered the implementation of a dynamic toolbox system for adding and modifying NLP modules, bolstering overall system stability. Further enhanced the system's functionality by introducing a Named Entity Recognition system to the transcription process.</p>
+                </div>
+            </div>
+            <!-- ... Add other experiences in a similar format ... -->
+            <div class="experience-item">
+                <div class="experience-logo">
+                    <img src="images/microsoft_logo_2.jpeg" alt="Microsoft Logo">
+                </div>
+                <div class="experience-info">
+                    <p class="date">05/2021 - 07/2021</p>
+                    <h3>Microsoft</h3>
+                    <p class="position">Software Engineer Intern</p>
+                    <p class="position">Cloud & Artificial Intelligence</p>
+                </div>
+                <div class="experience-details">
+                    <p>Designed and Implemented Spark Auto-Scale Simulator in Scala using Sparklens that simulates a Spark application based on the event history file from a single run of the Spark application. The simulator provides static executor support, pre-defined time series executor support, and custom auto-scale strategy with fixed scale-up/ scale-down delay support.</p>
+                    <p>It markedly accelerates operational efficiency by estimating time, cluster utilization, and cost metrics in under a minute - a significant reduction from traditional processing times by over 100 times.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-logo">
+                    <img src="images/iirs_logo.png" alt="IIRS Logo">
+                </div>
+                <div class="experience-info">
+                    <p class="date">05/2019 - 07/2019</p>
+                    <h3>Indian Institute of Remote Sensing</h3>
+                    <p class="position">Research Intern</p>
+                </div>
+                <div class="experience-details">
+                    <p>Improvement of Software for LiDAR Data - DHAROHAR: Led the enhancement of DHAROHAR, a software for advanced LiDAR Data Analysis. Utilized Python, PostgreSQL, C++, and Qt to integrate innovative modules for GLCM Texture Extraction and efficient storage and retrieval of 3D Point Cloud Data.</p>
+                    <p>Satellite Image Segmentation using UNet Deep Learning Architecture:  Led a project on Satellite Image Segmentation using the UNet Deep Learning Architecture. Successfully trained deep learning models in Keras utilizing transfer learning, even under resource-constrained conditions. Achieved 70% accuracy and Intersection over Union (IOU) score of 0.61 in the semantic segmentation of urban features from high-resolution, multi-spectral satellite images.</p>
+                </div>
+            </div>
+            <!-- ... Add other experiences in a similar format ... -->
+            <div class="experience-item">
+                <div class="experience-logo">
+                    <img src="images/karvy_logo.webp" alt="Karvy Logo">
+                </div>
+                <div class="experience-info">
+                    <p class="date">05/2018 - 07/2018</p>
+                    <h3>Karvy</h3>
+                    <p class="position">Research Intern</p>
+                    <p class="position">Equity Research Desk</p>
+                </div>
+                <div class="experience-details">
+                    <p>Researched macroeconomic trends and factors impacting India's equity market, providing actionable insights for the firm's strategic positioning.</p>
+                    <p>Conducted technical analysis on IT Sector, identifying potential buy/sell signals that were later incorporated into client recommendations.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+               
+    </div> <!-- End of .content div -->
+    <!-- JavaScript and closing body/html tags -->
+    <script src="scripts.js"></script>
+</body>
+</html>

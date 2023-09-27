@@ -1,0 +1,577 @@
+:root {
+    --primary-color: #f5f5f5;
+    --secondary-color: #333;
+    --accent-color: #555;
+}
+
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0%;
+    background-color: #fff;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensures the navbar is always on top */
+}
+
+nav .logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #2c3e50;
+    float: left;
+    margin-left: 2%;
+}
+
+nav ul li:last-child {
+    margin-right: 0%; /* Adjust the percentage as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    padding-right: 2%;
+    margin: 0;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db; /* Change to desired hover color */
+}
+
+nav, nav ul {
+    height: auto;
+    overflow: visible;
+}
+
+nav ul li, nav ul li a {
+    display: inline-block;
+    visibility: visible;
+}
+
+nav ul li a.active {
+    color: #3498db; /* or any other color you prefer */
+}
+
+
+
+.type-text::after {
+    content: '|';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: #f4f4f4; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligning content to the left */
+    font-family: 'Roboto', sans-serif;
+    padding-left: 15%; /* Increased left padding for better aesthetics */
+}
+
+.hero-content {
+    text-align: left;
+    color: #2c3e50; /* Darker shade for better contrast */
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #7f8c8d; /* Slightly lighter shade for the paragraph */
+}
+
+.resume-btn {
+    padding: 10px 25px;
+    border: 2px solid #2c3e50;
+    background-color: transparent;
+    color: #2c3e50;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none; /* Removing the underline */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block; /* To align with the text */
+    margin-top: 20px; /* Space from the paragraph */
+}
+
+.resume-btn:hover {
+    background-color: #2c3e50;
+    color: #f4f4f4;
+}
+
+/* Global Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Education Section */
+#education {
+    padding: 5% 0;
+    background-color: var(--primary-color);
+}
+
+.education-header h1 {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.education-item, .responsibility-item, .certification-item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover, .responsibility-item:hover, .certification-item:hover {
+    transform: translateY(-10px);
+}
+
+.school-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.school-logo img:hover {
+    transform: scale(1.1);
+}
+
+.education-info h3, .responsibility-info h3, .certification-item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.education-info p, .responsibility-info p, .certification-item p {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Achievements Section */
+.achievements {
+    margin-top: 4rem;
+}
+
+.achievements h1 {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.achievements ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.achievements li {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+/* Position Of Responsibilities Styles */
+.responsibility-info {
+    flex: 1;
+}
+
+.responsibility-info ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.responsibility-info li {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Certifications Section */
+.certification-item p {
+    font-size: 0.9rem;
+    text-align: left;
+    color: var(--accent-color);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.education-item, .responsibility-item, .certification-item {
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+/* Publications Section */
+.publication-section {
+    padding: 5% 10%;
+    background-color: var(--primary-color);
+}
+
+.publication-header h1 {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    padding-left: 10px;
+}
+
+.publication-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.publication-item {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.publication-image img {
+    margin-top: 2rem;
+    width: 200px;
+    height: 240px;
+    border-radius: 0%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.publication-image img:hover {
+    transform: scale(1.05);
+}
+
+.publication-content {
+    flex: 1; /* This ensures the content takes up the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the content */
+}
+
+.publication-content h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+    
+}
+
+.citation, .publication-description {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    text-align: justify;
+    line-height: 1.5; /* Improved readability */
+}
+
+.citation {
+    font-style: italic;
+}
+
+/* ... (rest of your CSS) ... */
+
+.btn-container {
+    display: flex;
+    gap: 1rem; /* spacing between buttons */
+}
+
+.read-more-btn, .download-btn {
+    flex: 1; /* allows buttons to take equal width */
+    display: inline-flex; /* centers text inside the button */
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem; /* Match the text size */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.read-more-btn:hover, .download-btn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+/* ... (rest of your CSS) ... */
+
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.publication-item {
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+
+
+/* Contact */
+#contact {
+    background-color: var(--primary-color);
+    padding: 80px 0;
+}
+
+.contact-header h1 {
+    font-size: 2rem; /* Reduced font size */
+    text-align: left; /* Aligned to the left */
+    margin-left: 9rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 15px;
+    width: 100%;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #555;
+}
+
+.contact-form button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.social-media {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-media a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #555;
+}
+
+/* Style for the Send button */
+input[type="submit"] {
+    background-color: #333;  /* Default background color */
+    color: #fff;             /* Text color */
+    border: none;            /* Remove border */
+    padding: 10px 20px;      /* Padding for the button */
+    cursor: pointer;         /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease;  /* Transition effect for smooth color change */
+}
+
+/* Hover effect for the Send button */
+input[type="submit"]:hover {
+    background-color: #555;  /* Darken the background color on hover */
+}
+
+/* Experience */
+#experience {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.experience-header h1 {
+    font-size: 2rem; /* Reduced font size */
+    text-align: left; /* Aligned to the left */
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* This ensures equal distribution of space */
+}
+
+.experience-logo img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 40px;
+    transition: transform 0.3s ease;
+}
+
+.experience-logo img:hover {
+    transform: scale(1.1);
+}
+
+.experience-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1; /* This ensures the middle section takes up the available space */
+}
+
+.date, .position, .experience-info h3 {
+    font-size: 1rem;
+    color: #000;
+    margin: 0;
+}
+
+.experience-info h3 {
+    font-weight: bold;
+}
+
+.experience-details {
+    flex: 3; /* This ensures the third section takes up twice the space of the middle section */
+    margin-left: 25px;
+    text-align: justify; /* Justified alignment */
+}
+
+.experience-details p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+.experience-details {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.experience-item {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: calc(0.3s * var(--i)); /* --i will be an inline style set for each item */
+}
+
+.experience-logo img, .experience-info, .experience-details, .date, .position {
+    cursor: pointer;
+}
+
+* {
+    transition: all 0.3s ease;
+}
+
+
+/* Page Fade Out Animation */
+.content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
